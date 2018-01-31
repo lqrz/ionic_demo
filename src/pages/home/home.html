@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Demo varias cosas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Testing</h1>
+  <p>GPS watchPosition()</p>
+  <p>Push notifications</p>
+  <p>HTTPprovider</p>
+
+  <h3>GPS coords: {{lat}} {{lon}}</h3>
+  <button ion-button (click)="get_current_position()">Usar GPS</button>
+
+  <h3>HTTP GET response</h3>
+
+  <ion-item *ngFor="let post of posts">
+    <p>{{post.id}} {{post.title}}</p>
+  </ion-item>
+
+</ion-content>
